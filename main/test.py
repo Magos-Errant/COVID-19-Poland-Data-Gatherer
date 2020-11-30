@@ -1,6 +1,9 @@
-import re
+date = "24/11/2020"
 
-dupa = "dupa zachodniopomorskie,457,2.7,39,5,34,t32"
-matches = re.search('(t[0-9]+)', dupa)
+target_day = date[:2]
+target_month = date[3:5]
+target_year = date[-2:]
 
-print(matches.group(1))
+print(target_day)
+print(target_month)
+print(target_year)
